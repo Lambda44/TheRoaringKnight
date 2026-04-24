@@ -1,0 +1,22 @@
+{
+  "${ModID}:SWOONPotion": {
+    "NAME": "SWOON Potion",
+    "DESCRIPTIONS": [
+      "Remove #yArtifact from ALL enemies. Apply #ySwoon to ALL enemies #b2 times.",
+      "Remove #yArtifact from ALL enemies. Apply #ySwoon to ALL enemies #b4 times."
+    ]
+  },
+  "${ModID}:ParalysisPotion": {
+    "NAME": "Paralysis Potion",
+    "DESCRIPTIONS": [
+      "#yParalyze an enemy."
+    ]
+  },
+  "${ModID}:GoldenPotion": {
+    "NAME": "Golden Potion",
+    "DESCRIPTIONS": [
+      "Choose any Rare card from #yThe #yRoaring #yKnight's card pool. Add a copy of it into your hand. It costs #b0 this turn.",
+      "Choose any Rare card from #yThe #yRoaring #yKnight's card pool. Add #b2 copies of it into your hand. They cost #b0 this turn."
+    ]
+  }
+}

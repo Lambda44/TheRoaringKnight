@@ -1,0 +1,9 @@
+Open Relic Image in GIMP
+Select the Magic Wand tool (the one that looks like a wand w/ a Star on the end)
+Click on the transparency surrounding the image
+CTRL+i to invert the selection
+Right-click the canvas > Select > Grow
+Increase border by 3 pixels
+In bottom right corner, Shift-click on the New Layer button
+Use bucket tool to fill selection with White
+Export

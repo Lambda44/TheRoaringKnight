@@ -1,0 +1,77 @@
+[
+  {
+    "PROPER_NAME": "Purge",
+    "NAMES": [
+      "purge"
+    ],
+    "DESCRIPTION": "Removed until end of combat. Does #rNOT go to your #yExhaust pile."
+  },
+  {
+    "PROPER_NAME": "Warp",
+    "NAMES": [
+      "warp",
+      "warping"
+    ],
+    "DESCRIPTION": "Put a random card from your #yExhaust pile into your hand. Prioritizes #yShadow cards."
+  },
+  {
+    "PROPER_NAME": "Swoon",
+    "NAMES": [
+      "swoon"
+    ],
+    "DESCRIPTION": "Enemies with #ySwoon lose #b5 HP at the start of their turn, then lose #ySwoon. Applying #ySwoon again in the same turn makes the enemy immediately lose #b10 HP."
+  },
+  {
+    "PROPER_NAME": "Shadow",
+    "NAMES": [
+      "shadow"
+    ],
+    "DESCRIPTION": "This card #yExhausts itself at the start of each combat."
+  },
+  {
+    "PROPER_NAME": "Darkness",
+    "NAMES": [
+      "darkness"
+    ],
+    "DESCRIPTION": "Trigger the specified effect if you have #bX or more cards in your #yExhaust pile."
+  },
+  {
+    "PROPER_NAME": "Titan",
+    "NAMES": [
+      "titan"
+    ],
+    "DESCRIPTION": "After playing the #b7th #yTitan card each combat, activate #yThe #yRoaring."
+  },
+  {
+    "PROPER_NAME": "The Roaring",
+    "NAMES": [
+      "The Roaring",
+      "the_roaring"
+    ],
+    "DESCRIPTION": "At the start of your turn, gain #b4 #yStrength and #yDexterity. #yTitan cards cost #b0."
+  },
+  {
+    "PROPER_NAME": "Plated Armor",
+    "NAMES": [
+      "Plated Armor",
+      "plated_armor"
+    ],
+    "DESCRIPTION": "At the end of your turn, gain #bX #yBlock. Receiving unblocked attack damage reduces this by #b1."
+  },
+  {
+    "PROPER_NAME": "Paralyze",
+    "NAMES": [
+      "paralyze",
+      "paralyzed",
+      "non-paralyzed"
+    ],
+    "DESCRIPTION": "Target deals #b40% less damage with Attacks this turn. Cannot stack."
+  },
+  {
+    "PROPER_NAME": "Fountain",
+    "NAMES": [
+      "fountain"
+    ],
+    "DESCRIPTION": "Trigger the specified effect if you have played #bX or more #yTitan cards this combat."
+  }
+]

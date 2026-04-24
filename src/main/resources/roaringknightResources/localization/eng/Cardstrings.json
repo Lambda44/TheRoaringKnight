@@ -1,0 +1,329 @@
+{
+  "${ModID}:Strike": {
+    "NAME": "Strike",
+    "DESCRIPTION": "Deal !D! damage."
+  },
+  "${ModID}:Defend": {
+    "NAME": "Defend",
+    "DESCRIPTION": "Gain !B! Block."
+  },
+  "${ModID}:Star": {
+    "NAME": "Star",
+    "DESCRIPTION": "Ethereal. NL Deal !D! damage. NL When Exhausted, deal !M! damage to a random enemy. NL Exhaust."
+  },
+  "${ModID}:DarkBullet": {
+    "NAME": "Dark Bullet",
+    "DESCRIPTION": "Retain. NL If the enemy doesn't have ${ModID}:Swoon, apply ${ModID}:Swoon. NL Deal !D! damage. NL Exhaust.",
+    "UPGRADE_DESCRIPTION": "Retain. NL Apply ${ModID}:Swoon. NL Deal !D! damage. NL Exhaust."
+  },
+  "${ModID}:CrystalStorm": {
+    "NAME": "Crystal Storm",
+    "DESCRIPTION": "Add !M! *Stars into your hand."
+  },
+  "${ModID}:Wormhole": {
+    "NAME": "Wormhole",
+    "DESCRIPTION": "Gain !B! Block. NL Put a random card from your Exhaust pile into your hand.",
+    "UPGRADE_DESCRIPTION": "Gain !B! Block. NL ${ModID}:Warp."
+  },
+  "${ModID}:DOWN": {
+    "NAME": "DOWN",
+    "DESCRIPTION": "Apply ${ModID}:Swoon. NL Draw !M! card. NL ${ModID}:Fountain !${ModID}:m2!: Draw !${ModID}:m2! card.",
+    "UPGRADE_DESCRIPTION": "Apply ${ModID}:Swoon. NL Draw !M! cards. NL ${ModID}:Fountain !${ModID}:m2!: Draw !${ModID}:m2! card."
+  },
+  "${ModID}:StarStrike": {
+    "NAME": "Star Strike",
+    "DESCRIPTION": "Deal !D! damage. NL Add a *Star into your hand."
+  },
+  "${ModID}:NarrowedVision": {
+    "NAME": "Narrowed Vision",
+    "DESCRIPTION": "Apply ${ModID}:Swoon to ALL enemies. NL Scry !M!."
+  },
+  "${ModID}:SwordFan": {
+    "NAME": "Sword Fan",
+    "DESCRIPTION": "${ModID}:Shadow. NL Deal !D! damage to ALL enemies. NL Next turn, draw !M! additional card."
+  },
+  "${ModID}:OminousHover": {
+    "NAME": "Ominous Hover",
+    "DESCRIPTION": "Gain !B! Block. NL The next time you are attacked, apply ${ModID}:Swoon to the attacker."
+  },
+  "${ModID}:Rend": {
+    "NAME": "Rend",
+    "DESCRIPTION": "Deal !D! damage 2 times. NL ${ModID}:Paralyze target enemy."
+  },
+  "${ModID}:StarBlast": {
+    "NAME": "Star Blast",
+    "DESCRIPTION": "Deal !D! damage. NL Deals !M! additional damage for each card in your Exhaust pile."
+  },
+  "${ModID}:TitanWing": {
+    "NAME": "Titan Wing",
+    "DESCRIPTION": "${ModID}:Titan. NL ${ModID}:Paralyze target enemy. NL Add !M! *Stars into your hand."
+  },
+  "${ModID}:CrystalBarrage": {
+    "NAME": "Crystal Barrage",
+    "DESCRIPTION": "Add !M! *Stars into your hand. NL ${ModID}:Darkness !${ModID}:m2!: Add !M! *Stars into your hand."
+  },
+  "${ModID}:ShadowShield": {
+    "NAME": "Shadow Shield",
+    "DESCRIPTION": "Gain !B! Block. NL ${ModID}:Warp."
+  },
+  "${ModID}:GlowingHands": {
+    "NAME": "Glowing Hands",
+    "DESCRIPTION": "${ModID}:Titan. NL Deal !D! damage. NL Give a card in your hand Retain for the rest of combat."
+  },
+  "${ModID}:DarkHarmony": {
+    "NAME": "Dark Harmony",
+    "DESCRIPTION": "Gain !B! Block. NL ${ModID}:Darkness !M!: Gain !B! Block."
+  },
+  "${ModID}:ShadowDrop": {
+    "NAME": "Shadow Drop",
+    "DESCRIPTION": "${ModID}:Shadow. NL Gain !B! Block. NL ALL enemies lose !M! Strength this turn."
+  },
+  "${ModID}:TitanSpawn": {
+    "NAME": "Titan Spawn",
+    "DESCRIPTION": "${ModID}:Titan. NL Gain !B! Block. NL Increase this card's Block by !M! this combat."
+  },
+  "${ModID}:MenacingGaze": {
+    "NAME": "Menacing Gaze",
+    "DESCRIPTION": "Gain !B! Block. NL ${ModID}:Paralyze target enemy. NL ${ModID}:Darkness !M!: Add a *Dark *Bullet into your hand.",
+    "UPGRADE_DESCRIPTION": "Gain !B! Block. NL ${ModID}:Paralyze target enemy. NL ${ModID}:Darkness !M!: Add a *Dark *Bullet+ into your hand."
+  },
+  "${ModID}:SpinningSlash": {
+    "NAME": "Spinning Slash",
+    "DESCRIPTION": "Deal !D! damage. NL Apply !M! Vulnerable. NL Apply ${ModID}:Swoon."
+  },
+  "${ModID}:Abyss": {
+    "NAME": "Abyss",
+    "DESCRIPTION": "Deal !D! damage. NL ${ModID}:Warp."
+  },
+  "${ModID}:FromTheDepths": {
+    "NAME": "From The Depths",
+    "DESCRIPTION": "Deal !D! damage. NL ${ModID}:Fountain !M!: Deal !D! damage."
+  },
+  "${ModID}:Swarm": {
+    "NAME": "Swarm",
+    "DESCRIPTION": "Ethereal. NL ${ModID}:Titan cards cost !M! less this combat."
+  },
+  "${ModID}:TitanSweep": {
+    "NAME": "Titan Sweep",
+    "DESCRIPTION": "${ModID}:Titan. NL Apply ${ModID}:Swoon to ALL enemies. NL ${ModID}:Darkness !M!: Apply ${ModID}:Swoon to ALL enemies."
+  },
+  "${ModID}:KnifeDance": {
+    "NAME": "Knife Dance",
+    "DESCRIPTION": "Deal !D! damage. NL ${ModID}:Fountain !M!: Gain Block equal to the damage dealt."
+  },
+  "${ModID}:Unnerve": {
+    "NAME": "Unnerve",
+    "DESCRIPTION": "At the start of your turn, Upgrade ALL *Dark *Bullets in your hand, then add a *Dark *Bullet into your hand."
+  },
+  "${ModID}:MysteriousVoice": {
+    "NAME": "Mysterious Voice",
+    "DESCRIPTION": "Deal !D! damage. NL Put a card from your Exhaust pile into your hand. NL ${ModID}:Purge."
+  },
+  "${ModID}:StarStorm": {
+    "NAME": "Star Storm",
+    "DESCRIPTION": "At the start of your turn, add a *Star into your hand.",
+    "UPGRADE_DESCRIPTION": "Innate. NL At the start of your turn, add a *Star into your hand."
+  },
+  "${ModID}:StarShield": {
+    "NAME": "Star Shield",
+    "DESCRIPTION": "Gain !B! Block. NL Add !M! *Stars into your hand."
+  },
+  "${ModID}:Eram": {
+    "NAME": "Eram",
+    "DESCRIPTION": "Innate. NL At the start of your turn, put a random ${ModID}:Shadow card from your Exhaust pile into your hand."
+  },
+  "${ModID}:Surrounded": {
+    "NAME": "Surrounded",
+    "DESCRIPTION": "Whenever you apply a debuff to an enemy, gain !M! Block."
+  },
+  "${ModID}:DarkCleanse": {
+    "NAME": "Dark Cleanse",
+    "DESCRIPTION": "Exhaust any number of cards in your hand, then draw that many cards."
+  },
+  "${ModID}:Regulation": {
+    "NAME": "Regulation",
+    "DESCRIPTION": "Draw !M! cards. NL Exhaust 1 card. NL ${ModID}:Warp."
+  },
+  "${ModID}:TwistedHeartbeat": {
+    "NAME": "Twisted Heartbeat",
+    "DESCRIPTION": "Whenever a card returns from the Exhaust pile, gain !M! Block."
+  },
+  "${ModID}:ShadowMantle": {
+    "NAME": "Shadow Mantle",
+    "DESCRIPTION": "${ModID}:Shadow. NL Gain !B! Block. NL Dexterity affects this card !M! times."
+  },
+  "${ModID}:SwordRing": {
+    "NAME": "Sword Ring",
+    "DESCRIPTION": "${ModID}:Shadow. NL Deal !D! damage to ALL enemies. NL Enemies with ${ModID}:Swoon are hit twice."
+  },
+  "${ModID}:MorphBall": {
+    "NAME": "Morph Ball",
+    "DESCRIPTION": "${ModID}:Paralyze target enemy. NL Gain !B! Block X times. NL Gain !${ModID}:m2! Dexterity. NL Exhaust.",
+    "UPGRADE_DESCRIPTION": "${ModID}:Paralyze target enemy. NL Gain !B! Block X+!M! times. NL Gain !${ModID}:m2! Dexterity. NL Exhaust."
+  },
+  "${ModID}:HomingShards": {
+    "NAME": "Homing Shards",
+    "DESCRIPTION": "Deal !D! damage for each enemy in combat. NL Add a *Star into your hand and Exhaust pile."
+  },
+  "${ModID}:GravityField": {
+    "NAME": "Gravity Field",
+    "DESCRIPTION": "Apply ${ModID}:Swoon to ALL enemies. NL Next turn, apply ${ModID}:Swoon to ALL enemies. NL Exhaust."
+  },
+  "${ModID}:TitanShield": {
+    "NAME": "Titan Shield",
+    "DESCRIPTION": "${ModID}:Titan. NL Gain !B! Block. NL Block is not removed at the start of your next !M! turns. NL Exhaust."
+  },
+  "${ModID}:Lightheaded": {
+    "NAME": "Lightheaded",
+    "DESCRIPTION": "Add !M! *Stars into your hand and Exhaust pile. NL Exhaust."
+  },
+  "${ModID}:SharpenBlade": {
+    "NAME": "Sharpen Blade",
+    "DESCRIPTION": "${ModID}:Shadow. NL Gain !M! Strength and Dexterity. NL Draw !${ModID}:m2! card. NL Exhaust.",
+    "UPGRADE_DESCRIPTION": "${ModID}:Shadow. NL Gain !M! Strength and Dexterity. NL Draw !${ModID}:m2! cards. NL Exhaust."
+  },
+  "${ModID}:SwiftSlash": {
+    "NAME": "Swift Slash",
+    "DESCRIPTION": "Deal !D! damage. NL ${ModID}:Warp. The returned card costs !M! less this turn."
+  },
+  "${ModID}:ShadowSerpent": {
+    "NAME": "Shadow Serpent",
+    "DESCRIPTION": "${ModID}:Titan. NL Choose a card in your Exhaust pile. Next turn, add !M! copies of that card into your hand. NL ${ModID}:Purge."
+  },
+  "${ModID}:SOULGrip": {
+    "NAME": "SOUL Grip",
+    "DESCRIPTION": "Gain !B! Block. NL Apply ${ModID}:Swoon !M! times, then increase this number by !${ModID}:m2! this combat."
+  },
+  "${ModID}:Colossus": {
+    "NAME": "Colossus",
+    "DESCRIPTION": "Deal !D! damage. NL Deals !M! additional damage for each ${ModID}:Titan card played this combat."
+  },
+  "${ModID}:TitanSlash": {
+    "NAME": "Titan Slash",
+    "DESCRIPTION": "${ModID}:Titan. NL Deal !D! damage and apply !M! Vulnerable to ALL enemies."
+  },
+  "${ModID}:CrystalCycle": {
+    "NAME": "Crystal Cycle",
+    "DESCRIPTION": "*Stars deal !M! additional attack damage."
+  },
+  "${ModID}:KnifeRing": {
+    "NAME": "Knife Ring",
+    "DESCRIPTION": "${ModID}:Shadow. NL Add !M! *Dark *Bullets+ into your hand."
+  },
+  "${ModID}:BlackShard": {
+    "NAME": "Black Shard",
+    "DESCRIPTION": "${ModID}:Shadow. NL Deal !D! damage. NL Draw !M! cards. NL Exhaust."
+  },
+  "${ModID}:NEODarkOrb": {
+    "NAME": "NEO Dark Orb",
+    "DESCRIPTION": "${ModID}:Shadow. NL Deal !D! damage. NL Gain !M! Block next turn."
+  },
+  "${ModID}:DarkSpawn": {
+    "NAME": "Dark Spawn",
+    "DESCRIPTION": "Gain !B! Block. NL ${ModID}:Darkness !M!: Add a *Titan *Spawn into your hand and it costs 0 this turn. NL ${ModID}:Purge."
+  },
+  "${ModID}:ConstrictingDarkness": {
+    "NAME": "Constricting Darkness",
+    "DESCRIPTION": "Deal !D! damage. NL Enemy loses !${ModID}:m2! Strength. NL ${ModID}:Darkness !M!: Gain !${ModID}:m2! Strength."
+  },
+  "${ModID}:TacticalDodge": {
+    "NAME": "Tactical Dodge",
+    "DESCRIPTION": "Exhaust !M! cards. NL Gain !B! Block !M! times."
+  },
+  "${ModID}:DarkRipple": {
+    "NAME": "Dark Ripple",
+    "DESCRIPTION": "Gain !B! Block. NL ${ModID}:Warp. NL ${ModID}:Fountain !M!: Put a card from your discard pile into your hand."
+  },
+  "${ModID}:INVReduction": {
+    "NAME": "INV Reduction",
+    "DESCRIPTION": "Deal !D! damage twice. NL ${ModID}:Darkness !M!: Apply !${ModID}:m2! Vulnerable."
+  },
+  "${ModID}:Accelerate": {
+    "NAME": "Accelerate",
+    "DESCRIPTION": "Draw !M! cards. NL ${ModID}:Fountain !${ModID}:m2!: Next turn, draw 2 additional cards."
+  },
+  "${ModID}:Suffocate": {
+    "NAME": "Suffocate",
+    "DESCRIPTION": "Add a *Dark *Bullet and !M! *Stars into your hand. NL Upgrade !${ModID}:m2! random Colorless cards in your hand."
+  },
+  "${ModID}:Migrainer": {
+    "NAME": "Migrainer",
+    "DESCRIPTION": "Whenever you play a Colorless card, draw !M! card."
+  },
+  "${ModID}:TitanLaser": {
+    "NAME": "Titan Laser",
+    "DESCRIPTION": "${ModID}:Titan. NL Deal !D! damage !M! times."
+  },
+  "${ModID}:DarkFountain": {
+    "NAME": "Dark Fountain",
+    "DESCRIPTION": "${ModID}:Titan. NL ${ModID}:Fountain !${ModID}:m2!: Gain !M! Strength. NL ${ModID}:Purge.",
+    "EXTENDED_DESCRIPTION": [
+      "I haven't played a Titan card yet!"
+    ]
+  },
+  "${ModID}:CrystalNova": {
+    "NAME": "Crystal Nova",
+    "DESCRIPTION": "Deal !D! damage to ALL enemies !M! times. NL ${ModID}:Purge."
+  },
+  "${ModID}:Prophecy": {
+    "NAME": "Prophecy",
+    "DESCRIPTION": "Retain. NL ${ModID}:Titan. NL Draw !M! card. NL ${ModID}:Purge.",
+    "UPGRADE_DESCRIPTION": "Retain. NL ${ModID}:Titan. NL Draw !M! cards. NL ${ModID}:Purge."
+  },
+  "${ModID}:RoaringForm": {
+    "NAME": "Roaring Form",
+    "DESCRIPTION": "Ethereal. NL At the start of your turn, add a *Prophecy into your hand. NL ${ModID}:The_Roaring gives you !M! additional Strength and Dexterity each turn.",
+    "UPGRADE_DESCRIPTION": "At the start of your turn, add a *Prophecy into your hand. NL ${ModID}:The_Roaring gives you !M! additional Strength and Dexterity each turn."
+  },
+  "${ModID}:RevolvingWorld": {
+    "NAME": "Revolving World",
+    "DESCRIPTION": "At the end of your turn, apply ${ModID}:Swoon to ALL enemies.",
+    "UPGRADE_DESCRIPTION": "At the end of your turn, apply ${ModID}:Swoon to ALL enemies. NL Next turn, draw 1 additional card."
+  },
+  "${ModID}:HowlingWind": {
+    "NAME": "Howling Wind",
+    "DESCRIPTION": "${ModID}:Paralyze ALL enemies. NL At the start of your next turn, ${ModID}:Paralyze ALL enemies. NL ${ModID}:Purge."
+  },
+  "${ModID}:GoldenStars": {
+    "NAME": "Golden Stars",
+    "DESCRIPTION": "The first !M! *Stars you create each turn are Upgraded."
+  },
+  "${ModID}:SwordTunnel": {
+    "NAME": "Sword Tunnel",
+    "DESCRIPTION": "${ModID}:Shadow. NL Deal !D! damage and apply ${ModID}:Swoon to ALL enemies. NL Add a *Dark *Bullet into your hand.",
+    "UPGRADE_DESCRIPTION": "${ModID}:Shadow. NL Deal !D! damage and apply ${ModID}:Swoon to ALL enemies. NL Add a *Dark *Bullet+ into your hand."
+  },
+  "${ModID}:WhirlingVision": {
+    "NAME": "Whirling Vision",
+    "DESCRIPTION": "The first time you Exhaust a card each turn, apply ${ModID}:Swoon to a random enemy.",
+    "UPGRADE_DESCRIPTION": "The first !M! times you Exhaust a card each turn, apply ${ModID}:Swoon to a random enemy."
+  },
+  "${ModID}:SilentKneel": {
+    "NAME": "Silent Kneel",
+    "DESCRIPTION": "${ModID}:Darkness !M!: Gain !B! Block, 2 Dexterity, and increase this card's ${ModID}:Darkness requirement by !${ModID}:m2! this combat."
+  },
+  "${ModID}:SanguineSlash": {
+    "NAME": "Sanguine Slash",
+    "DESCRIPTION": "Deal !D! damage !M! times. NL Heal HP equal to half the unblocked damage dealt. NL ${ModID}:Purge."
+  },
+  "${ModID}:ConjureDarkness": {
+    "NAME": "Conjure Darkness",
+    "DESCRIPTION": "${ModID}:Darkness !M!: Gain !${ModID}:m2! ${ModID}:Plated_Armor and !${ModID}:m2! Thorns."
+  },
+  "${ModID}:CrystalDance": {
+    "NAME": "Crystal Dance",
+    "DESCRIPTION": "Deal !D! damage. NL Exhaust any number of cards in your hand. For each one Exhausted, add a *Star into your hand."
+  },
+  "${ModID}:DarkSalvation": {
+    "NAME": "Dark Salvation",
+    "DESCRIPTION": "Whenever you play a ${ModID}:Titan card, ${ModID}:Paralyze a random enemy."
+  },
+  "${ModID}:ForgottenArmy": {
+    "NAME": "Forgotten Army",
+    "DESCRIPTION": "${ModID}:Shadow. NL Gain !B! Block. NL Gain 1 additional Block for each card in your Exhaust pile. NL Exhaust."
+  },
+  "${ModID}:Nullify": {
+    "NAME": "Nullify",
+    "DESCRIPTION": "Deal !D! damage. NL Remove target's Artifact. NL ${ModID}:Darkness !M!: Enemy loses !${ModID}:m2! Strength this turn. NL ${ModID}:Purge."
+  }
+}

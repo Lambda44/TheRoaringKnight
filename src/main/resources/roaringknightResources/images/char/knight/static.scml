@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<spriter_data scml_version="1.0" generator="BrashMonkey Spriter" generator_version="r11">
+    <folder id="0">
+        <file id="0" name="main.png" width="272" height="260" pivot_x="0" pivot_y="1"/>
+        <file id="1" name="laidback.png" width="168" height="260" pivot_x="0" pivot_y="1"/>
+        <file id="2" name="point.png" width="312" height="268" pivot_x="0" pivot_y="1"/>
+        <file id="3" name="hand.png" width="280" height="268" pivot_x="0" pivot_y="1"/>
+        <file id="4" name="damaged.png" width="228" height="168" pivot_x="0" pivot_y="1"/>
+        <file id="5" name="roaring1.png" width="304" height="252" pivot_x="0" pivot_y="1"/>
+        <file id="6" name="roaring2.png" width="308" height="256" pivot_x="0" pivot_y="1"/>
+        <file id="7" name="stance.png" width="248" height="240" pivot_x="0" pivot_y="1"/>
+        <file id="8" name="windup.png" width="284" height="268" pivot_x="0" pivot_y="1"/>
+        <file id="9" name="execute.png" width="276" height="420" pivot_x="0" pivot_y="1"/>
+        <file id="10" name="chargeup.png" width="196" height="180" pivot_x="0" pivot_y="1"/>
+        <file id="11" name="ss_windup.png" width="232" height="352" pivot_x="0" pivot_y="1"/>
+        <file id="12" name="sslash1.png" width="376" height="312" pivot_x="0" pivot_y="1"/>
+        <file id="13" name="sslash2.png" width="312" height="244" pivot_x="0" pivot_y="1"/>
+        <file id="14" name="sslash3.png" width="440" height="252" pivot_x="0" pivot_y="1"/>
+    </folder>
+    <entity id="0" name="Knight">
+        <animation id="0" name="Idle" length="1000" interval="33" l="-100" t="-270" r="171" b="-11">
+            <mainline>
+                <key id="0">
+                    <object_ref id="0" timeline="0" key="0" z_index="0"/>
+                </key>
+            </mainline>
+            <timeline id="0" name="temp">
+                <key id="0" spin="0">
+                    <object folder="0" file="0" x="-100" y="270" angle="0"/>
+                </key>
+            </timeline>
+        </animation>
+        <animation id="1" name="SS_Windup" length="100" interval="33">
+            <mainline>
+                <key id="0">
+                    <object_ref id="0" timeline="0" key="0" z_index="0"/>
+                </key>
+            </mainline>
+            <timeline id="0" name="ss_windup">
+                <key id="0" spin="0">
+                    <object folder="0" file="11" x="-100" y="362"/>
+                </key>
+            </timeline>
+        </animation>
+        <animation id="2" name="SSlash1" length="20" interval="33">
+            <mainline>
+                <key id="0">
+                    <object_ref id="0" timeline="0" key="0" z_index="0"/>
+                </key>
+            </mainline>
+            <timeline id="0" name="sslash1">
+                <key id="0" spin="0">
+                    <object folder="0" file="12" x="-90" y="275"/>
+                </key>
+            </timeline>
+        </animation>
+        <animation id="3" name="SSlash2" length="20" interval="33">
+            <mainline>
+                <key id="0">
+                    <object_ref id="0" timeline="0" key="0" z_index="0"/>
+                </key>
+            </mainline>
+            <timeline id="0" name="sslash2">
+                <key id="0" spin="0">
+                    <object folder="0" file="13" x="-98" y="264"/>
+                </key>
+            </timeline>
+        </animation>
+        <animation id="4" name="SSlash3" length="20" interval="33">
+            <mainline>
+                <key id="0">
+                    <object_ref id="0" timeline="0" key="0" z_index="0"/>
+                </key>
+            </mainline>
+            <timeline id="0" name="sslash3">
+                <key id="0" spin="0">
+                    <object folder="0" file="14" x="-165" y="264"/>
+                </key>
+            </timeline>
+        </animation>
+        <animation id="5" name="Chargeup" length="2000" interval="33">
+            <mainline>
+                <key id="0">
+                    <object_ref id="0" timeline="0" key="0" z_index="0"/>
+                </key>
+            </mainline>
+            <timeline id="0" name="chargeup">
+                <key id="0" spin="0">
+                    <object folder="0" file="10" x="-81" y="188" angle="0"/>
+                </key>
+            </timeline>
+        </animation>
+        <animation id="6" name="Windup" length="150" interval="33">
+            <mainline>
+                <key id="0">
+                    <object_ref id="0" timeline="0" key="0" z_index="0"/>
+                </key>
+            </mainline>
+            <timeline id="0" name="windup">
+                <key id="0" spin="0">
+                    <object folder="0" file="8" x="-126" y="280" angle="0"/>
+                </key>
+            </timeline>
+        </animation>
+        <animation id="7" name="Execute" length="850" interval="33">
+            <mainline>
+                <key id="0">
+                    <object_ref id="0" timeline="0" key="0" z_index="0"/>
+                </key>
+            </mainline>
+            <timeline id="0" name="execute">
+                <key id="0" spin="0">
+                    <object folder="0" file="9" x="-105" y="433" angle="0"/>
+                </key>
+            </timeline>
+        </animation>
+        <animation id="8" name="Stance" length="1000" interval="33">
+            <mainline>
+                <key id="0">
+                    <object_ref id="0" timeline="0" key="0" z_index="0"/>
+                </key>
+            </mainline>
+            <timeline id="0" name="stance">
+                <key id="0" spin="0">
+                    <object folder="0" file="7" x="-103" y="252" angle="0"/>
+                </key>
+            </timeline>
+        </animation>
+        <animation id="9" name="Roaring1" length="25" interval="33">
+            <mainline>
+                <key id="0">
+                    <object_ref id="0" timeline="0" key="0" z_index="0"/>
+                </key>
+            </mainline>
+            <timeline id="0" name="roaring1">
+                <key id="0" spin="0">
+                    <object folder="0" file="5" x="-139" y="266" angle="0"/>
+                </key>
+            </timeline>
+        </animation>
+        <animation id="10" name="Roaring2" length="25" interval="33">
+            <mainline>
+                <key id="0">
+                    <object_ref id="0" timeline="0" key="0" z_index="0"/>
+                </key>
+            </mainline>
+            <timeline id="0" name="roaring2">
+                <key id="0" spin="0">
+                    <object folder="0" file="6" x="-145" y="270" angle="0"/>
+                </key>
+            </timeline>
+        </animation>
+        <animation id="11" name="Dmg_Idle" length="75" interval="33">
+            <mainline>
+                <key id="0">
+                    <object_ref id="0" timeline="0" key="0" z_index="0"/>
+                </key>
+            </mainline>
+            <timeline id="0" name="temp">
+                <key id="0" spin="0">
+                    <object folder="0" file="0" x="-100" y="270" angle="0"/>
+                </key>
+            </timeline>
+        </animation>
+        <animation id="12" name="Dmg_Damaged" length="25" interval="33">
+            <mainline>
+                <key id="0">
+                    <object_ref id="0" timeline="0" key="0" z_index="0"/>
+                </key>
+            </mainline>
+            <timeline id="0" name="damaged">
+                <key id="0" spin="0">
+                    <object folder="0" file="4" x="-103" y="238" angle="0"/>
+                </key>
+            </timeline>
+        </animation>
+        <animation id="13" name="Hand" length="1000" interval="100">
+            <mainline>
+                <key id="0">
+                    <object_ref id="0" timeline="0" key="0" z_index="0"/>
+                </key>
+            </mainline>
+            <timeline id="0" name="hand">
+                <key id="0" spin="0">
+                    <object folder="0" file="3" x="-108" y="276" angle="0"/>
+                </key>
+            </timeline>
+        </animation>
+        <animation id="14" name="Point" length="1000" interval="100">
+            <mainline>
+                <key id="0">
+                    <object_ref id="0" timeline="0" key="0" z_index="0"/>
+                </key>
+            </mainline>
+            <timeline id="0" name="point">
+                <key id="0" spin="0">
+                    <object folder="0" file="2" x="-108" y="276" angle="0"/>
+                </key>
+            </timeline>
+        </animation>
+        <animation id="15" name="LaidBack" length="1000" interval="100">
+            <mainline>
+                <key id="0">
+                    <object_ref id="0" timeline="0" key="0" z_index="0"/>
+                </key>
+            </mainline>
+            <timeline id="0" name="laidback">
+                <key id="0" spin="0">
+                    <object folder="0" file="1" x="-85" y="269" angle="0"/>
+                </key>
+            </timeline>
+        </animation>
+    </entity>
+</spriter_data>

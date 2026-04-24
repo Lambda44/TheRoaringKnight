@@ -1,0 +1,13 @@
+{
+  "${ModID}:RoaringKnight": {
+    "NAMES": [
+      "The Roaring Knight",
+      "the Roaring Knight"
+    ],
+    "TEXT": [
+      "The knight from Hometown who wishes to bring about The Roaring. NL Decimates opponents with Dark and Star attacks.",
+      "NL Your hands glow a strange color...",
+      "Navigating an unlit street, you come across several hooded figures in the midst of some dark ritual. As you approach, they turn to you in eerie unison. The tallest among them bares fanged teeth and extends a long, pale hand towards you. NL ~\"Join~ ~us~ ~dark~ ~one,~ ~and~ ~feel~ ~the~ ~warmth~ ~of~ ~the~ ~Spire.\"~"
+    ]
+  }
+}

@@ -1,0 +1,51 @@
+package roaringknight.cards;
+
+import basemod.BaseMod;
+import basemod.helpers.TooltipInfo;
+import com.badlogic.gdx.graphics.Color;
+import com.megacrit.cardcrawl.actions.AbstractGameAction;
+import com.megacrit.cardcrawl.cards.AbstractCard;
+import com.megacrit.cardcrawl.characters.AbstractPlayer;
+import com.megacrit.cardcrawl.monsters.AbstractMonster;
+import roaringknight.RKMod;
+import roaringknight.powers.TitanPower;
+import roaringknight.vfx.LineCutEffect;
+
+import java.util.Collections;
+import java.util.List;
+
+import static roaringknight.RKMod.makeID;
+import static roaringknight.util.Wiz.*;
+
+public class FromTheDepths extends AbstractEasyCard {
+    public final static String ID = makeID("FromTheDepths");
+
+    public FromTheDepths() {
+        super(ID, 1, CardType.ATTACK, CardRarity.COMMON, CardTarget.ENEMY);
+        baseDamage = 6;
+        this.baseMagicNumber = 1;
+        this.tags.add(RKMod.WINDUP);
+    }
+
+    public void use(AbstractPlayer p, AbstractMonster m) {
+        vfx(new LineCutEffect(m, 0f, new Color(1f, 1f, 1f, 1f)));
+        dmg(m, AbstractGameAction.AttackEffect.NONE);
+        if (p().hasPower(TitanPower.POWER_ID)) {
+            vfx(new LineCutEffect(m, -90f, new Color(1f, 1f, 1f, 1f)));
+            dmg(m, AbstractGameAction.AttackEffect.NONE);
+        }
+    }
+
+    public void triggerOnGlowCheck() {
+        if (p().hasPower(TitanPower.POWER_ID)) {
+            this.glowColor = AbstractCard.GOLD_BORDER_GLOW_COLOR.cpy();
+        } else {
+            this.glowColor = AbstractCard.BLUE_BORDER_GLOW_COLOR.cpy();
+        }
+    }
+
+    @Override
+    public void upp() {
+        upgradeDamage(3);
+    }
+}

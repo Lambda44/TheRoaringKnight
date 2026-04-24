@@ -1,0 +1,16 @@
+{
+  "RKMod:RKTutorials": {
+    "TEXT": [
+      "[#800080]The[] [#800080]Roaring[] [#800080]Knight[] has access to #yShadow cards, which #yExhaust themselves at the start of each combat. You can get these cards into your hand with cards like #bWormhole.",
+      "[#800080]The[] [#800080]Roaring[] [#800080]Knight[] also has access to #yTitan cards. Some cards may require you to play a certain number of #yTitan cards to activate specific effects.",
+      "You will activate #yThe #yRoaring upon playing your #b7th #yTitan card each combat! This gets you a massive amount of #yStrength and #yDexterity each turn, as well as making #yTitan cards cost #b0."
+    ],
+    "LABEL": [
+      "Next",
+      "Got it",
+      "The Roaring Knight",
+      "(Page: ",
+      ")"
+    ]
+  }
+}

@@ -1,0 +1,79 @@
+{
+  "${ModID}:BlackKnife": {
+    "NAME": "Black Knife",
+    "FLAVOR": "You can summon hundreds of these without breaking a sweat.",
+    "DESCRIPTIONS": [
+      "At the start of your first #b3 turns each combat, add a #yStar into your hand."
+    ]
+  },
+  "${ModID}:WiffleBat": {
+    "NAME": "Wiffle Bat",
+    "FLAVOR": "You feel nostalgic looking at this.",
+    "DESCRIPTIONS": [
+      "At the start of your turn, apply #y${ModID}:Swoon to a random enemy."
+    ]
+  },
+  "${ModID}:EnhancedBlade": {
+    "NAME": "Enhanced Blade",
+    "FLAVOR": "You've made many Dark Fountains with this blade.",
+    "DESCRIPTIONS": [
+      "The first time you play a #y${ModID}:Titan card each combat, gain #b1 #yStrength, #b1 #yDexterity, and #b8 #yBlock."
+    ]
+  },
+  "${ModID}:VisorManipulator": {
+    "NAME": "Visor Manipulator",
+    "FLAVOR": "Gives you clearer vision, allowing you to hurt them that much harder.",
+    "DESCRIPTIONS": [
+      "Raise your max hand size by #b2. At the start of each combat, add #b2 #yStars into your hand."
+    ]
+  },
+  "${ModID}:SheerAura": {
+    "NAME": "Sheer Aura",
+    "FLAVOR": "These enemies can't hurt you. Time to aura farm them.",
+    "DESCRIPTIONS": [
+      "#y${ModID}:Paralyzed enemies deal #b60% less damage rather than #b40%."
+    ]
+  },
+  "${ModID}:TitanFragment": {
+    "NAME": "Titan Fragment",
+    "FLAVOR": "You will finish what they started.",
+    "DESCRIPTIONS": [
+      "At the start of each combat, add a #yShadow #ySerpent with #yRetain into your hand. It costs #b0 this combat."
+    ]
+  },
+  "${ModID}:BlackHole": {
+    "NAME": "Black Hole",
+    "FLAVOR": "Your power keeps this under control. It does only what you need it to.",
+    "DESCRIPTIONS": [
+      "The first time you #y${ModID}:Warp each turn, you choose which card gets returned."
+    ]
+  },
+  "${ModID}:Synchronizer": {
+    "NAME": "Synchronizer",
+    "FLAVOR": "It hums at the same distorted frequency as you.",
+    "DESCRIPTIONS": [
+      "Whenever an enemy applies #yWeak, #yVulnerable, or #yStrength #yDown to you, they also gain that debuff."
+    ]
+  },
+  "${ModID}:SOULKnife": {
+    "NAME": "SOUL Knife",
+    "FLAVOR": "One of your many knives, now infused with the power of a SOUL.",
+    "DESCRIPTIONS": [
+      "Replaces [#800080]Black[] [#800080]Knife[]. At the start of your turn, add a #yStar into your hand. #yStars deal #b2 more #ynon-Attack damage."
+    ]
+  },
+  "${ModID}:WhiteHole": {
+    "NAME": "White Hole",
+    "FLAVOR": "One half of a pair, just like you and... no, never mind.",
+    "DESCRIPTIONS": [
+      "At the start of your turn, #y${ModID}:Warp and gain #b6 #yBlock."
+    ]
+  },
+  "${ModID}:Sanctuary": {
+    "NAME": "Sanctuary",
+    "FLAVOR": "It's what you seek... but also what you want to destroy.",
+    "DESCRIPTIONS": [
+      "At the start of each combat, add #b2 #yProphecies into your hand."
+    ]
+  }
+}

@@ -1,0 +1,177 @@
+{
+  "${ModID}:Swoon": {
+    "NAME": "Swoon",
+    "DESCRIPTIONS": [
+      "At the start of its turn, loses #b",
+      " HP, then removes #ySwoon. Applying #ySwoon to this enemy again before its next turn makes them lose #b",
+      " HP immediately."
+    ]
+  },
+  "${ModID}:OminousHover": {
+    "NAME": "Ominous Hover",
+    "DESCRIPTIONS": [
+      "The next time you are attacked, apply #ySwoon to the attacker.",
+      "The next #b",
+      " times you are attacked, apply #ySwoon to the attacker."
+    ]
+  },
+  "${ModID}:Paralyze": {
+    "NAME": "Paralyze",
+    "DESCRIPTIONS": [
+      "Deals #b40% less damage with #yAttacks this turn. Cannot stack.",
+      "Deals #b60% less damage with #yAttacks this turn. Cannot stack."
+    ]
+  },
+  "${ModID}:Titan": {
+    "NAME": "Titan",
+    "DESCRIPTIONS": [
+      "You have played #b",
+      " #yTitan card. ",
+      " #yTitan cards. ",
+      "You need to play #b7 #yTitan cards to activate #yThe #yRoaring.",
+      "#yThe #yRoaring is active."
+    ]
+  },
+  "${ModID}:TheRoaring": {
+    "NAME": "The Roaring",
+    "DESCRIPTIONS": [
+      "At the start of your turn, gain #b",
+      " #yStrength and #yDexterity. #yTitan cards cost #b0."
+    ]
+  },
+  "${ModID}:Swarm": {
+    "NAME": "Swarm",
+    "DESCRIPTIONS": [
+      "Your #yTitan cards cost #b",
+      " less this combat."
+    ]
+  },
+  "${ModID}:Unnerve": {
+    "NAME": "Unnerve",
+    "DESCRIPTIONS": [
+      "At the start of your turn, #yUpgrade ALL #yDark #yBullets in your hand, then add #b",
+      " #yDark #yBullet into your hand.",
+      " #yDark #yBullets into your hand."
+    ]
+  },
+  "${ModID}:StarStorm": {
+    "NAME": "Star Storm",
+    "DESCRIPTIONS": [
+      "At the start of your turn, add #b",
+      " #yStar into your hand.",
+      " #yStars into your hand."
+    ]
+  },
+  "${ModID}:Eram": {
+    "NAME": "Eram",
+    "DESCRIPTIONS": [
+      "At the start of your turn, put #b",
+      " random #yShadow card from your #yExhaust pile into your hand.",
+      " random #yShadow cards from your #yExhaust pile into your hand."
+    ]
+  },
+  "${ModID}:Surrounded": {
+    "NAME": "Surrounded",
+    "DESCRIPTIONS": [
+      "Whenever you apply a debuff to an enemy, gain #b",
+      " #yBlock."
+    ]
+  },
+  "${ModID}:TwistedHeartbeat": {
+    "NAME": "Twisted Heartbeat",
+    "DESCRIPTIONS": [
+      "When a card returns from the #yExhaust pile, gain #b",
+      " #yBlock."
+    ]
+  },
+  "${ModID}:GravityField": {
+    "NAME": "Gravity Field",
+    "DESCRIPTIONS": [
+      "At the start of your next turn, apply #ySwoon to ALL enemies.",
+      "At the start of your next #b",
+      " turns, apply #ySwoon to ALL enemies."
+    ]
+  },
+  "${ModID}:RevolvingWorld": {
+    "NAME": "Revolving World",
+    "DESCRIPTIONS": [
+      "At the end of your turn, apply #ySwoon to ALL enemies.",
+      "At the end of your turn, apply #ySwoon to ALL enemies #b",
+      " times."
+    ]
+  },
+  "${ModID}:CrystalCycle": {
+    "NAME": "Crystal Cycle",
+    "DESCRIPTIONS": [
+      "#yStars deal #b",
+      " additional #yAttack damage."
+    ]
+  },
+  "${ModID}:Migrainer": {
+    "NAME": "Migrainer",
+    "DESCRIPTIONS": [
+      "Whenever you play a #yColorless card, draw #b",
+      " card.",
+      " cards."
+    ]
+  },
+  "${ModID}:RoaringForm": {
+    "NAME": "Roaring Form",
+    "DESCRIPTIONS": [
+      "At the start of your turn, add a #yProphecy into your hand. #yThe #yRoaring gives you #b",
+      " additional #yStrength and #yDexterity each turn."
+    ]
+  },
+  "${ModID}:GoldenStars": {
+    "NAME": "Golden Stars",
+    "DESCRIPTIONS": [
+      "The first #b",
+      " #yStars you create each turn are #yUpgraded. (Can activate #b",
+      " more time)",
+      " more times)"
+    ]
+  },
+  "${ModID}:WhirlingVision": {
+    "NAME": "Whirling Vision",
+    "DESCRIPTIONS": [
+      "The first time you #yExhaust a card each turn, apply #ySwoon to a random enemy. (Can activate #b",
+      " more time)",
+      " more times)",
+      "The first #b",
+      " times you #yExhaust a card each turn, apply #ySwoon to a random enemy. (Can activate #b",
+      " more time)",
+      " more times)"
+    ]
+  },
+  "${ModID}:DarkSalvation": {
+    "NAME": "Dark Salvation",
+    "DESCRIPTIONS": [
+      "Whenever you play a #yTitan card, #yParalyze a random enemy.",
+      "Whenever you play a #yTitan card, #yParalyze a random enemy #b",
+      " times."
+    ]
+  },
+  "${ModID}:HowlingWind": {
+    "NAME": "Howling Wind",
+    "DESCRIPTIONS": [
+      "At the start of your next turn, #yParalyze ALL enemies.",
+      "At the start of your next #b",
+      " turns, #yParalyze ALL enemies."
+    ]
+  },
+  "${ModID}:ShadowSerpent": {
+    "NAME": "Shadow Serpent",
+    "DESCRIPTIONS": [
+      "Next turn, add #b",
+      " into your hand.",
+      " "
+    ]
+  },
+  "${ModID}:SOULCrystal": {
+    "NAME": "SOUL Crystal",
+    "DESCRIPTIONS": [
+      "#yStars deal #b",
+      " additional #ynon-Attack damage."
+    ]
+  }
+}
