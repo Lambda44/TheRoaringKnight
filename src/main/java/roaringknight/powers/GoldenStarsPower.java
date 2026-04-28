@@ -26,36 +26,18 @@ public class GoldenStarsPower extends AbstractEasyPower implements OnCreateCardI
 
     public GoldenStarsPower(AbstractCreature owner, int amount) {
         super(POWER_ID, NAME, TYPE, TURN_BASED, owner, amount);
-        this.isTwoAmount = true;
-        this.amount2 = amount;
-        this.updateDescription();
-    }
-
-    public void stackPower(int amt) {
-        super.stackPower(amt);
-        this.amount2 += amt;
-        this.updateDescription();
-    }
-
-    public void atStartOfTurn() {
-        this.amount2 = this.amount;
         this.updateDescription();
     }
 
     public void updateDescription() {
-        if (this.amount2 == 1) {
-            this.description = DESCRIPTIONS[0] + this.amount + DESCRIPTIONS[1] + this.amount2 + DESCRIPTIONS[2];
-        } else {
-            this.description = DESCRIPTIONS[0] + this.amount + DESCRIPTIONS[1] + this.amount2 + DESCRIPTIONS[3];
-        }
+        this.description = DESCRIPTIONS[0];
     }
 
     @Override
     public void onCreateCard(AbstractCard abstractCard) {
-        if (abstractCard instanceof Star && this.amount2 > 0) {
+        if (abstractCard instanceof Star) {
+            this.flashWithoutSound();
             abstractCard.upgrade();
-            this.amount2--;
-            this.updateDescription();
         }
     }
 }

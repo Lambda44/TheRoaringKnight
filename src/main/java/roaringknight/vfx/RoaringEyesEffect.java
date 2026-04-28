@@ -7,6 +7,7 @@ import com.badlogic.gdx.graphics.g2d.SpriteBatch;
 import com.megacrit.cardcrawl.core.Settings;
 import com.megacrit.cardcrawl.helpers.ImageMaster;
 import com.megacrit.cardcrawl.vfx.AbstractGameEffect;
+import roaringknight.util.TexLoader;
 
 import static roaringknight.RKMod.makeVFXPath;
 
@@ -16,7 +17,7 @@ public class RoaringEyesEffect extends AbstractGameEffect {
     private Texture img = null;
 
     public RoaringEyesEffect() {
-        this.img = ImageMaster.loadImage(makeVFXPath("titan_eye.png"));
+        this.img = TexLoader.getTexture(makeVFXPath("titan_eye.png"));
         this.scale = Settings.scale;
         this.duration = 1f;
         this.color = Settings.HALF_TRANSPARENT_WHITE_COLOR.cpy();

@@ -46,6 +46,7 @@ import roaringknight.powers.TheRoaringPower;
 import roaringknight.powers.TitanPower;
 import roaringknight.relics.BlackKnife;
 import roaringknight.util.ProAudio;
+import roaringknight.util.TexLoader;
 import roaringknight.vfx.AfterImageEffect;
 import roaringknight.vfx.RoarFlashEffect;
 
@@ -435,7 +436,7 @@ public class RoaringKnight extends CustomPlayer {
     }
 
     public Texture getCutsceneBg() {
-        return ImageMaster.loadImage("images/scenes/purpleBg.jpg");
+        return TexLoader.getTexture("images/scenes/purpleBg.jpg");
     }
 
     public List<CutscenePanel> getCutscenePanels() {

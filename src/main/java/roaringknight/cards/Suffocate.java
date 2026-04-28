@@ -10,6 +10,7 @@ import com.megacrit.cardcrawl.orbs.Dark;
 import com.megacrit.cardcrawl.powers.GainStrengthPower;
 import com.megacrit.cardcrawl.powers.StrengthPower;
 import roaringknight.RKMod;
+import roaringknight.actions.UpgradeAllColorlessAction;
 import roaringknight.actions.UpgradeRandomColorlessAction;
 import roaringknight.powers.TitanPower;
 import roaringknight.util.ProAudio;
@@ -26,7 +27,6 @@ public class Suffocate extends AbstractEasyCard {
     public Suffocate() {
         super(ID, 1, CardType.SKILL, CardRarity.UNCOMMON, CardTarget.SELF);
         this.baseMagicNumber = 2;
-        this.baseSecondMagic = 2;
         MultiCardPreview.add(this, new DarkBullet(), new Star());
         this.tags.add(RKMod.HAND);
     }
@@ -35,11 +35,11 @@ public class Suffocate extends AbstractEasyCard {
         playAudioV(ProAudio.STAR_BARRAGE, 2.5f);
         makeInHand(new DarkBullet());
         makeInHand(new Star(), this.baseMagicNumber);
-        atb(new UpgradeRandomColorlessAction(this.baseSecondMagic));
+        atb(new UpgradeAllColorlessAction());
     }
 
     @Override
     public void upp() {
-        upgradeSecondMagic(1);
+        upgradeMagicNumber(1);
     }
 }

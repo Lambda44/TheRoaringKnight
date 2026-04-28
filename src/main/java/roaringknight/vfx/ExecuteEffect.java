@@ -7,6 +7,7 @@ import com.megacrit.cardcrawl.core.Settings;
 import com.megacrit.cardcrawl.helpers.ImageMaster;
 import com.megacrit.cardcrawl.vfx.AbstractGameEffect;
 import roaringknight.RoaringKnight;
+import roaringknight.util.TexLoader;
 
 import static roaringknight.RKMod.makeVFXPath;
 import static roaringknight.util.Wiz.p;
@@ -28,7 +29,7 @@ public class ExecuteEffect extends AbstractGameEffect {
             this.x = p().hb.x;
         }
         this.y = p().hb.y + (20f * this.scale);
-        this.img = ImageMaster.loadImage(makeVFXPath("rkslash.png"));
+        this.img = TexLoader.getTexture(makeVFXPath("rkslash.png"));
         this.duration = 0.3f;
     }
 

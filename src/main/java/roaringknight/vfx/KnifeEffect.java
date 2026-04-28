@@ -9,6 +9,7 @@ import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import com.megacrit.cardcrawl.vfx.AbstractGameEffect;
 import roaringknight.RoaringKnight;
 import roaringknight.util.ProAudio;
+import roaringknight.util.TexLoader;
 
 import java.util.Set;
 
@@ -24,7 +25,7 @@ public class KnifeEffect extends AbstractGameEffect {
     private float rotation;
 
     public KnifeEffect(AbstractMonster m) {
-        this.img = ImageMaster.loadImage(makeVFXPath("black_knife.png"));
+        this.img = TexLoader.getTexture(makeVFXPath("black_knife.png"));
         this.x = m.hb.x + (m.hb_w / 3f);
         this.y = m.hb.y + (m.hb_h * 2f);
         this.duration = 0.5f;

@@ -15,7 +15,7 @@ public class WhirlingVision extends AbstractEasyCard {
 
     public WhirlingVision() {
         super(ID, 2, CardType.POWER, CardRarity.RARE, CardTarget.SELF);
-        this.baseMagicNumber = 1;
+        this.baseMagicNumber = 2;
         this.tags.add(RKMod.POINT);
     }
 

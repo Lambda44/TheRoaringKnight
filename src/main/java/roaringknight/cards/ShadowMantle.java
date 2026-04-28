@@ -15,7 +15,7 @@ public class ShadowMantle extends AbstractEasyCard implements StartupCard {
 
     public ShadowMantle() {
         super(ID, 2, CardType.SKILL, CardRarity.UNCOMMON, CardTarget.SELF);
-        baseBlock = 12;
+        baseBlock = 14;
         magicNumber = baseMagicNumber = 4;
         this.tags.add(RKMod.SHADOW);
         this.tags.add(RKMod.LAIDBACK);

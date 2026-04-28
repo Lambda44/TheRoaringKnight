@@ -22,7 +22,7 @@ public class CrystalDance extends AbstractEasyCard {
 
     public CrystalDance() {
         super(ID, 1, CardType.ATTACK, CardRarity.RARE, CardTarget.ENEMY);
-        baseDamage = 6;
+        baseDamage = 8;
         this.cardsToPreview = new Star();
         this.tags.add(RKMod.HAND);
     }

@@ -31,21 +31,25 @@ public class CrystalCyclePower extends AbstractEasyPower {
         for (AbstractCard c : hand().group) {
             if (c instanceof Star) {
                 c.baseDamage = 4 + this.amount;
+                c.baseMagicNumber = 4 + this.amount;
             }
         }
         for (AbstractCard c : drawPile().group) {
             if (c instanceof Star) {
                 c.baseDamage = 4 + this.amount;
+                c.baseMagicNumber = 4 + this.amount;
             }
         }
         for (AbstractCard c : discardPile().group) {
             if (c instanceof Star) {
                 c.baseDamage = 4 + this.amount;
+                c.baseMagicNumber = 4 + this.amount;
             }
         }
         for (AbstractCard c : exhaustPile().group) {
             if (c instanceof Star) {
                 c.baseDamage = 4 + this.amount;
+                c.baseMagicNumber = 4 + this.amount;
             }
         }
     }
@@ -54,6 +58,7 @@ public class CrystalCyclePower extends AbstractEasyPower {
         for (AbstractCard c : hand().group) {
             if (c instanceof Star) {
                 c.baseDamage = 4 + this.amount;
+                c.baseMagicNumber = 4 + this.amount;
             }
         }
     }

@@ -8,6 +8,7 @@ import com.megacrit.cardcrawl.helpers.ImageMaster;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import com.megacrit.cardcrawl.vfx.AbstractGameEffect;
 import roaringknight.util.ProAudio;
+import roaringknight.util.TexLoader;
 
 import static roaringknight.RKMod.makeVFXPath;
 import static roaringknight.util.Wiz.p;
@@ -21,7 +22,7 @@ public class SweepEffect extends AbstractGameEffect {
     public SweepEffect() {
         this.x = p().hb.x + p().hb_w;
         this.y = p().hb.y + (p().hb_h / 4.0f);
-        this.img = ImageMaster.loadImage(makeVFXPath("sweep.png"));
+        this.img = TexLoader.getTexture(makeVFXPath("sweep.png"));
         this.duration = 1.2f;
         this.scale = Settings.scale;
         playAudioV(ProAudio.CUT, 0.8f);

@@ -8,6 +8,7 @@ import com.megacrit.cardcrawl.core.Settings;
 import com.megacrit.cardcrawl.helpers.ImageMaster;
 import com.megacrit.cardcrawl.vfx.AbstractGameEffect;
 import roaringknight.util.ProAudio;
+import roaringknight.util.TexLoader;
 
 import static roaringknight.RKMod.makeVFXPath;
 import static roaringknight.util.Wiz.playAudioV;
@@ -18,7 +19,7 @@ public class TitanFaceEffect extends AbstractGameEffect {
     private Texture img = null;
 
     public TitanFaceEffect() {
-        this.img = ImageMaster.loadImage(makeVFXPath("titan_face.png"));
+        this.img = TexLoader.getTexture(makeVFXPath("titan_face.png"));
         this.scale = Settings.scale;
         this.duration = 1f;
         this.color = new Color(1f, 1f, 1f, 1f);

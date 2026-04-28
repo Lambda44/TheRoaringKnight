@@ -8,6 +8,7 @@ import com.megacrit.cardcrawl.helpers.ImageMaster;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import com.megacrit.cardcrawl.vfx.AbstractGameEffect;
 import roaringknight.util.ProAudio;
+import roaringknight.util.TexLoader;
 
 import static roaringknight.RKMod.makeVFXPath;
 import static roaringknight.util.Wiz.playAudio;
@@ -20,7 +21,7 @@ public class SwoonEffect extends AbstractGameEffect {
     public SwoonEffect(AbstractMonster m) {
         this.x = m.hb.x - (m.hb_w / 4f);
         this.y = m.hb.y + m.hb_h;
-        this.img = ImageMaster.loadImage(makeVFXPath("swoon.png"));
+        this.img = TexLoader.getTexture(makeVFXPath("swoon.png"));
         this.duration = 1.2f;
         this.scale = Settings.scale;
     }

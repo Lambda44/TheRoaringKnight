@@ -24,12 +24,10 @@ public class RevolvingWorld extends AbstractEasyCard {
 
     public void use(AbstractPlayer p, AbstractMonster m) {
         applyToSelf(new RevolvingWorldPower(p, this.baseMagicNumber));
-        if (this.upgraded) {
-            applyToSelf(new DrawCardNextTurnPower(p, 1));
-        }
     }
 
     @Override
     public void upp() {
+        upgradeBaseCost(0);
     }
 }

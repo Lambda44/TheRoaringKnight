@@ -26,9 +26,7 @@ public class SSlashEffect extends AbstractGameEffect {
         this.x = m.hb.cX - (m.hb_w / 2f);
         this.y = m.hb.cY - (m.hb_h / 2f);
         this.img = ImageMaster.HORIZONTAL_LINE;
-        this.duration = 0.8f;
-        if (p().hasPower(TheRoaringPower.POWER_ID))
-            this.duration += 1.1f;
+        this.duration = 1.9f;
         this.startDuration = this.duration;
         this.timeStep = 0.05f;
         this.scale = 2f * Settings.scale;

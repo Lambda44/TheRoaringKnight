@@ -14,7 +14,7 @@ public class CrystalCycle extends AbstractEasyCard {
 
     public CrystalCycle() {
         super(ID, 1, CardType.POWER, CardRarity.UNCOMMON, CardTarget.SELF);
-        this.baseMagicNumber = 4;
+        this.baseMagicNumber = 2;
         this.cardsToPreview = new Star();
         this.tags.add(RKMod.LAIDBACK);
     }
@@ -25,6 +25,6 @@ public class CrystalCycle extends AbstractEasyCard {
 
     @Override
     public void upp() {
-        upgradeMagicNumber(2);
+        upgradeMagicNumber(1);
     }
 }

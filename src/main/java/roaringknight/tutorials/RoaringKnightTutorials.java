@@ -16,6 +16,7 @@ import com.megacrit.cardcrawl.helpers.input.InputHelper;
 import com.megacrit.cardcrawl.localization.TutorialStrings;
 import com.megacrit.cardcrawl.ui.FtueTip;
 import roaringknight.RKMod;
+import roaringknight.util.TexLoader;
 
 public class RoaringKnightTutorials extends FtueTip {
     private static final TutorialStrings tutorialStrings = CardCrawlGame.languagePack.getTutorialString("RKMod:RKTutorials");
@@ -39,9 +40,9 @@ public class RoaringKnightTutorials extends FtueTip {
     private int closeScreen;
 
     public RoaringKnightTutorials() {
-        this.img1 = ImageMaster.loadImage(RKMod.makeImagePath("tip/RKTip1.png"));
-        this.img2 = ImageMaster.loadImage(RKMod.makeImagePath("tip/RKTip2.png"));
-        this.img3 = ImageMaster.loadImage(RKMod.makeImagePath("tip/RKTip3.png"));
+        this.img1 = TexLoader.getTexture(RKMod.makeImagePath("tip/RKTip1.png"));
+        this.img2 = TexLoader.getTexture(RKMod.makeImagePath("tip/RKTip2.png"));
+        this.img3 = TexLoader.getTexture(RKMod.makeImagePath("tip/RKTip3.png"));
 
         txt1 = txt[0];
         txt2 = txt[1];

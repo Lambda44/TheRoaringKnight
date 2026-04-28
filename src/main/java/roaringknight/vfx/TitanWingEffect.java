@@ -9,6 +9,7 @@ import com.megacrit.cardcrawl.helpers.ImageMaster;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import com.megacrit.cardcrawl.vfx.AbstractGameEffect;
 import roaringknight.util.ProAudio;
+import roaringknight.util.TexLoader;
 
 import static roaringknight.RKMod.makeVFXPath;
 import static roaringknight.util.Wiz.playAudioV;
@@ -20,7 +21,7 @@ public class TitanWingEffect extends AbstractGameEffect {
     private float timeStep;
 
     public TitanWingEffect(AbstractMonster m) {
-        this.img = ImageMaster.loadImage(makeVFXPath("titan_wing.png"));
+        this.img = TexLoader.getTexture(makeVFXPath("titan_wing.png"));
         this.scale = Settings.scale;
         this.duration = 0.6f;
         this.timeStep = 0.05f;

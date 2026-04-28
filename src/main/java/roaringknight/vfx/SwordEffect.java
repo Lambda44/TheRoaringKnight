@@ -8,6 +8,7 @@ import com.megacrit.cardcrawl.helpers.ImageMaster;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import com.megacrit.cardcrawl.vfx.AbstractGameEffect;
 import roaringknight.util.ProAudio;
+import roaringknight.util.TexLoader;
 
 import static roaringknight.RKMod.makeVFXPath;
 import static roaringknight.util.Wiz.*;
@@ -25,7 +26,7 @@ public class SwordEffect extends AbstractGameEffect {
         this.x = p().hb.x + p().hb_w;
         this.y = m.hb.y + (m.hb_h /2.0f);
         this.mo = m;
-        this.img = ImageMaster.loadImage(makeVFXPath("sword.png"));
+        this.img = TexLoader.getTexture(makeVFXPath("sword.png"));
         this.duration = 1.0f;
         this.scale = Settings.scale;
         this.stops = true;
@@ -37,7 +38,7 @@ public class SwordEffect extends AbstractGameEffect {
         this.x = p().hb.x + p().hb_w;
         this.y = p().hb.y + (p().hb_h /2.0f);
         this.mo = null;
-        this.img = ImageMaster.loadImage(makeVFXPath("sword.png"));
+        this.img = TexLoader.getTexture(makeVFXPath("sword.png"));
         this.duration = 1.0f;
         this.scale = Settings.scale;
         this.stops = false;

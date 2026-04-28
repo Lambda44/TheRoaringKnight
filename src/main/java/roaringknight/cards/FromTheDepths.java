@@ -22,7 +22,7 @@ public class FromTheDepths extends AbstractEasyCard {
 
     public FromTheDepths() {
         super(ID, 1, CardType.ATTACK, CardRarity.COMMON, CardTarget.ENEMY);
-        baseDamage = 6;
+        baseDamage = 7;
         this.baseMagicNumber = 1;
         this.tags.add(RKMod.WINDUP);
     }
@@ -46,6 +46,6 @@ public class FromTheDepths extends AbstractEasyCard {
 
     @Override
     public void upp() {
-        upgradeDamage(3);
+        upgradeDamage(2);
     }
 }

@@ -8,6 +8,7 @@ import com.megacrit.cardcrawl.helpers.ImageMaster;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import com.megacrit.cardcrawl.vfx.AbstractGameEffect;
 import roaringknight.util.ProAudio;
+import roaringknight.util.TexLoader;
 
 import static roaringknight.RKMod.makeVFXPath;
 import static roaringknight.util.Wiz.playAudio;
@@ -24,7 +25,7 @@ public class TitanLaserEffect extends AbstractGameEffect {
     public TitanLaserEffect(AbstractMonster m) {
         this.animNum = 0;
         this.path = "Laser/TitanLaser" + animNum + ".png";
-        this.img = ImageMaster.loadImage(makeVFXPath(this.path));
+        this.img = TexLoader.getTexture(makeVFXPath(this.path));
         this.x = m.hb.x + (m.hb_w / 2f) - (this.img.getWidth() / 2f);
         this.y = m.hb.y;
         this.duration = 1.0f;
@@ -61,6 +62,6 @@ public class TitanLaserEffect extends AbstractGameEffect {
         if (animNum > 19)
             animNum = 19;
         this.path = "Laser/TitanLaser" + animNum + ".png";
-        this.img = ImageMaster.loadImage(makeVFXPath(this.path));
+        this.img = TexLoader.getTexture(makeVFXPath(this.path));
     }
 }

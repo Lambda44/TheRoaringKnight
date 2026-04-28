@@ -204,7 +204,7 @@
   },
   "${ModID}:CrystalCycle": {
     "NAME": "Crystal Cycle",
-    "DESCRIPTION": "*Stars deal !M! additional attack damage."
+    "DESCRIPTION": "*Stars deal !M! additional damage."
   },
   "${ModID}:KnifeRing": {
     "NAME": "Knife Ring",
@@ -244,7 +244,7 @@
   },
   "${ModID}:Suffocate": {
     "NAME": "Suffocate",
-    "DESCRIPTION": "Add a *Dark *Bullet and !M! *Stars into your hand. NL Upgrade !${ModID}:m2! random Colorless cards in your hand."
+    "DESCRIPTION": "Add a *Dark *Bullet and !M! *Stars into your hand. NL Upgrade ALL Colorless cards in your hand."
   },
   "${ModID}:Migrainer": {
     "NAME": "Migrainer",
@@ -256,10 +256,7 @@
   },
   "${ModID}:DarkFountain": {
     "NAME": "Dark Fountain",
-    "DESCRIPTION": "${ModID}:Titan. NL ${ModID}:Fountain !${ModID}:m2!: Gain !M! Strength. NL ${ModID}:Purge.",
-    "EXTENDED_DESCRIPTION": [
-      "I haven't played a Titan card yet!"
-    ]
+    "DESCRIPTION": "${ModID}:Titan. NL ${ModID}:Fountain !${ModID}:m2!: Gain !M! Strength. NL ${ModID}:Purge."
   },
   "${ModID}:CrystalNova": {
     "NAME": "Crystal Nova",
@@ -277,8 +274,7 @@
   },
   "${ModID}:RevolvingWorld": {
     "NAME": "Revolving World",
-    "DESCRIPTION": "At the end of your turn, apply ${ModID}:Swoon to ALL enemies.",
-    "UPGRADE_DESCRIPTION": "At the end of your turn, apply ${ModID}:Swoon to ALL enemies. NL Next turn, draw 1 additional card."
+    "DESCRIPTION": "At the end of your turn, apply ${ModID}:Swoon to ALL enemies."
   },
   "${ModID}:HowlingWind": {
     "NAME": "Howling Wind",
@@ -286,7 +282,8 @@
   },
   "${ModID}:GoldenStars": {
     "NAME": "Golden Stars",
-    "DESCRIPTION": "The first !M! *Stars you create each turn are Upgraded."
+    "DESCRIPTION": "Ethereal. NL Whenever a *Star is created during combat, Upgrade it.",
+    "UPGRADE_DESCRIPTION": "Whenever a *Star is created during combat, Upgrade it."
   },
   "${ModID}:SwordTunnel": {
     "NAME": "Sword Tunnel",
@@ -295,8 +292,7 @@
   },
   "${ModID}:WhirlingVision": {
     "NAME": "Whirling Vision",
-    "DESCRIPTION": "The first time you Exhaust a card each turn, apply ${ModID}:Swoon to a random enemy.",
-    "UPGRADE_DESCRIPTION": "The first !M! times you Exhaust a card each turn, apply ${ModID}:Swoon to a random enemy."
+    "DESCRIPTION": "The first !M! times you Exhaust a card each turn, apply ${ModID}:Swoon to a random enemy."
   },
   "${ModID}:SilentKneel": {
     "NAME": "Silent Kneel",

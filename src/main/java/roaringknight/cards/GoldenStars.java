@@ -16,7 +16,8 @@ public class GoldenStars extends AbstractEasyCard {
 
     public GoldenStars() {
         super(ID, 2, CardType.POWER, CardRarity.RARE, CardTarget.SELF);
-        this.baseMagicNumber = 2;
+        this.baseMagicNumber = -1;
+        this.isEthereal = true;
         AbstractCard c = new Star();
         c.upgrade();
         MultiCardPreview.add(this, new Star(), c);
@@ -29,6 +30,6 @@ public class GoldenStars extends AbstractEasyCard {
 
     @Override
     public void upp() {
-        upgradeMagicNumber(1);
+        this.isEthereal = false;
     }
 }

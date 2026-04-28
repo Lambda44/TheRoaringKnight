@@ -104,7 +104,7 @@
     "NAME": "Crystal Cycle",
     "DESCRIPTIONS": [
       "#yStars deal #b",
-      " additional #yAttack damage."
+      " additional damage."
     ]
   },
   "${ModID}:Migrainer": {
@@ -125,10 +125,7 @@
   "${ModID}:GoldenStars": {
     "NAME": "Golden Stars",
     "DESCRIPTIONS": [
-      "The first #b",
-      " #yStars you create each turn are #yUpgraded. (Can activate #b",
-      " more time)",
-      " more times)"
+      "Whenever a #yStar is created, it is #yUpgraded."
     ]
   },
   "${ModID}:WhirlingVision": {

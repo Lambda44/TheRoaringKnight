@@ -22,7 +22,7 @@ public class SwiftSlash extends AbstractEasyCard {
 
     public SwiftSlash() {
         super(ID, 1, CardType.ATTACK, CardRarity.UNCOMMON, CardTarget.ENEMY);
-        baseDamage = 4;
+        baseDamage = 6;
         this.baseMagicNumber = 1;
         this.tags.add(RKMod.WINDUP);
     }

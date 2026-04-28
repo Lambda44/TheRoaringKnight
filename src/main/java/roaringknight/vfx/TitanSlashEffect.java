@@ -11,6 +11,7 @@ import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.helpers.ImageMaster;
 import com.megacrit.cardcrawl.vfx.AbstractGameEffect;
 import roaringknight.util.ProAudio;
+import roaringknight.util.TexLoader;
 
 import static roaringknight.RKMod.makeVFXPath;
 import static roaringknight.util.Wiz.playAudioV;
@@ -21,7 +22,7 @@ public class TitanSlashEffect extends AbstractGameEffect {
     private float y;
 
     public TitanSlashEffect() {
-        this.img = ImageMaster.loadImage(makeVFXPath("titan_slash.png"));
+        this.img = TexLoader.getTexture(makeVFXPath("titan_slash.png"));
         this.color = new Color(1.0F, 1.0F, 1.0F, 1.0F);
         this.x = (float)Settings.WIDTH * 0.7F - (float)this.img.getWidth() / 2.0F;
         this.y = AbstractDungeon.floorY + 100.0F * Settings.scale - (float)this.img.getHeight() / 2.0F;

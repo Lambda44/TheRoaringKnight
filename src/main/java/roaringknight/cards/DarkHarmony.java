@@ -13,7 +13,7 @@ public class DarkHarmony extends AbstractEasyCard {
 
     public DarkHarmony() {
         super(ID, 1, CardType.SKILL, CardRarity.COMMON, CardTarget.SELF);
-        baseBlock = 5;
+        baseBlock = 6;
         this.baseMagicNumber = 5;
         this.tags.add(RKMod.LAIDBACK);
     }

@@ -25,7 +25,7 @@ public class GlowingHands extends AbstractEasyCard {
 
     public GlowingHands() {
         super(ID, 2, CardType.ATTACK, CardRarity.COMMON, CardTarget.ENEMY);
-        baseDamage = 10;
+        baseDamage = 12;
         this.baseMagicNumber = 1;
         this.tags.add(RKMod.TITAN);
         this.tags.add(RKMod.POINT);

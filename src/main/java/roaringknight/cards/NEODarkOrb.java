@@ -17,8 +17,8 @@ public class NEODarkOrb extends AbstractEasyCard implements StartupCard {
 
     public NEODarkOrb() {
         super(ID, 0, CardType.ATTACK, CardRarity.UNCOMMON, CardTarget.ENEMY);
-        baseDamage = 7;
-        this.baseMagicNumber = 4;
+        baseDamage = 8;
+        this.baseMagicNumber = 5;
         this.tags.add(RKMod.SHADOW);
         this.tags.add(RKMod.HAND);
     }

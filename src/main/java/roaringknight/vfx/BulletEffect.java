@@ -8,6 +8,7 @@ import com.megacrit.cardcrawl.helpers.ImageMaster;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import com.megacrit.cardcrawl.vfx.AbstractGameEffect;
 import roaringknight.util.ProAudio;
+import roaringknight.util.TexLoader;
 
 import static roaringknight.RKMod.makeImagePath;
 import static roaringknight.RKMod.makeVFXPath;
@@ -25,7 +26,7 @@ public class BulletEffect extends AbstractGameEffect {
         this.x = p().hb.x + p().hb_w;
         this.y = m.hb.y + (m.hb_h /2.0f);
         this.mo = m;
-        this.img = ImageMaster.loadImage(makeVFXPath("bullet.png"));
+        this.img = TexLoader.getTexture(makeVFXPath("bullet.png"));
         this.duration = 2.0f;
         this.scale = Settings.scale;
         this.flipX = p().flipHorizontal;

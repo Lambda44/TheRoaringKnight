@@ -59,7 +59,7 @@
     "NAME": "SOUL Knife",
     "FLAVOR": "One of your many knives, now infused with the power of a SOUL.",
     "DESCRIPTIONS": [
-      "Replaces [#800080]Black[] [#800080]Knife[]. At the start of your turn, add a #yStar into your hand. #yStars deal #b2 more #ynon-Attack damage."
+      "Replaces [#800080]Black[] [#800080]Knife[]. At the start of your turn, add a #yStar into your hand. #yStars deal #b3 more damage."
     ]
   },
   "${ModID}:WhiteHole": {

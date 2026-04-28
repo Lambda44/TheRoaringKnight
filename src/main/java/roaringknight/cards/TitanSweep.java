@@ -30,7 +30,7 @@ public class TitanSweep extends AbstractEasyCard {
 
     public TitanSweep() {
         super(ID, 2, CardType.SKILL, CardRarity.UNCOMMON, CardTarget.ALL_ENEMY);
-        this.baseMagicNumber = 8;
+        this.baseMagicNumber = 6;
         this.tags.add(RKMod.TITAN);
         this.tags.add(RKMod.HAND);
     }

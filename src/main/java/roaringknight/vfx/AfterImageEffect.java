@@ -7,6 +7,7 @@ import com.megacrit.cardcrawl.core.Settings;
 import com.megacrit.cardcrawl.helpers.ImageMaster;
 import com.megacrit.cardcrawl.vfx.AbstractGameEffect;
 import roaringknight.RoaringKnight;
+import roaringknight.util.TexLoader;
 
 import static roaringknight.util.Wiz.p;
 
@@ -27,7 +28,7 @@ public class AfterImageEffect extends AbstractGameEffect {
             this.x -= (65.0f * Settings.scale);
         }
         this.y = y;
-        this.img = ImageMaster.loadImage(RoaringKnight.getCurrentSprite());
+        this.img = TexLoader.getTexture(RoaringKnight.getCurrentSprite());
         if (isRoaring) {
             this.duration = 0.3f;
             this.speed = 3.0f;

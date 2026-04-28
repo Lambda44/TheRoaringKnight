@@ -4,6 +4,7 @@ import basemod.helpers.CardPowerTip;
 import com.megacrit.cardcrawl.relics.AbstractRelic;
 import roaringknight.RoaringKnight;
 import roaringknight.cards.Star;
+import roaringknight.powers.CrystalCyclePower;
 import roaringknight.powers.SOULCrystalPower;
 
 import static roaringknight.RKMod.makeID;
@@ -18,7 +19,7 @@ public class SOULKnife extends AbstractEasyRelic {
     }
 
     public void atBattleStart() {
-        applyToSelf(new SOULCrystalPower(p(), 2));
+        applyToSelf(new CrystalCyclePower(p(), 3));
     }
 
     public void atTurnStart() {
