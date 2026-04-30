@@ -2,6 +2,8 @@ package roaringknight;
 
 import basemod.*;
 import basemod.abstracts.DynamicVariable;
+import basemod.eventUtil.AddEventParams;
+import basemod.eventUtil.EventUtils;
 import basemod.helpers.RelicType;
 import basemod.interfaces.*;
 import com.badlogic.gdx.Gdx;
@@ -18,6 +20,7 @@ import com.evacipated.cardcrawl.modthespire.lib.SpireInitializer;
 import com.google.gson.Gson;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.core.Settings;
+import com.megacrit.cardcrawl.events.city.Ghosts;
 import com.megacrit.cardcrawl.helpers.FontHelper;
 import com.megacrit.cardcrawl.localization.*;
 import com.megacrit.cardcrawl.rooms.AbstractRoom;
@@ -26,6 +29,7 @@ import org.scannotation.AnnotationDB;
 import roaringknight.actions.MessageCaller;
 import roaringknight.cards.AbstractEasyCard;
 import roaringknight.cards.cardvars.AbstractEasyDynamicVariable;
+import roaringknight.events.RKCoGEvent;
 import roaringknight.potions.AbstractEasyPotion;
 import roaringknight.relics.AbstractEasyRelic;
 import roaringknight.util.ProAudio;
@@ -173,6 +177,12 @@ public class RKMod implements
 
     @Override
     public void receivePostInitialize() {
+        BaseMod.addEvent(new AddEventParams.Builder(RKCoGEvent.ID, RKCoGEvent.class)
+                .playerClass(RoaringKnight.Enums.THE_ROARING_KNIGHT)
+                .overrideEvent(Ghosts.ID)
+                .eventType(EventUtils.EventType.FULL_REPLACE)
+                .create());
+
         ModPanel settings = new ModPanel();
         settings.addUIElement((IUIElement)new ModLabeledToggleButton("Enable custom BGM", 350.0F, 700.0F, Settings.CREAM_COLOR, FontHelper.charDescFont,
                 config.getBool("customBGM"), settings, label -> {}, button -> {
@@ -279,6 +289,7 @@ public class RKMod implements
         BaseMod.loadCustomStringsFile(StanceStrings.class, modID + "Resources/localization/" + getLangString() + "/Stancestrings.json");
         BaseMod.loadCustomStringsFile(PotionStrings.class, modID + "Resources/localization/" + getLangString() + "/Potionstrings.json");
         BaseMod.loadCustomStringsFile(TutorialStrings.class, modID + "Resources/localization/" + getLangString() + "/Tutorialstrings.json");
+        BaseMod.loadCustomStringsFile(EventStrings.class, modID + "Resources/localization/" + getLangString() + "/Eventstrings.json");
     }
 
     @Override

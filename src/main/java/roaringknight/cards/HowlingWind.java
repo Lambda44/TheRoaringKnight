@@ -1,5 +1,6 @@
 package roaringknight.cards;
 
+import com.evacipated.cardcrawl.mod.stslib.fields.cards.AbstractCard.PurgeField;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
@@ -18,7 +19,7 @@ public class HowlingWind extends AbstractEasyCard {
     public HowlingWind() {
         super(ID, 1, CardType.SKILL, CardRarity.RARE, CardTarget.ALL_ENEMY);
         this.baseMagicNumber = 1;
-        this.purgeOnUse = true;
+        PurgeField.purge.set(this, true);
         this.tags.add(RKMod.POINT);
     }
 

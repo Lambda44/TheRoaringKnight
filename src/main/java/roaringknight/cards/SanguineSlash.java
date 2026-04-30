@@ -2,6 +2,7 @@ package roaringknight.cards;
 
 import com.badlogic.gdx.graphics.Color;
 import com.evacipated.cardcrawl.mod.stslib.actions.common.DamageCallbackAction;
+import com.evacipated.cardcrawl.mod.stslib.fields.cards.AbstractCard.PurgeField;
 import com.megacrit.cardcrawl.actions.AbstractGameAction;
 import com.megacrit.cardcrawl.actions.common.HealAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
@@ -24,7 +25,7 @@ public class SanguineSlash extends AbstractEasyCard {
         super(ID, 1, CardType.ATTACK, CardRarity.RARE, CardTarget.ENEMY);
         baseDamage = 2;
         this.baseMagicNumber = 4;
-        this.purgeOnUse = true;
+        PurgeField.purge.set(this, true);
         this.tags.add(RKMod.SSLASH);
     }
 

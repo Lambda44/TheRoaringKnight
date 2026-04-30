@@ -27,6 +27,7 @@ public class Suffocate extends AbstractEasyCard {
     public Suffocate() {
         super(ID, 1, CardType.SKILL, CardRarity.UNCOMMON, CardTarget.SELF);
         this.baseMagicNumber = 2;
+        this.baseSecondMagic = 2;
         MultiCardPreview.add(this, new DarkBullet(), new Star());
         this.tags.add(RKMod.HAND);
     }
@@ -35,11 +36,11 @@ public class Suffocate extends AbstractEasyCard {
         playAudioV(ProAudio.STAR_BARRAGE, 2.5f);
         makeInHand(new DarkBullet());
         makeInHand(new Star(), this.baseMagicNumber);
-        atb(new UpgradeAllColorlessAction());
+        atb(new UpgradeRandomColorlessAction(this.baseSecondMagic));
     }
 
     @Override
     public void upp() {
-        upgradeMagicNumber(1);
+        upgradeSecondMagic(1);
     }
 }

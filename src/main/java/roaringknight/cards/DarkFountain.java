@@ -3,6 +3,7 @@ package roaringknight.cards;
 import basemod.BaseMod;
 import basemod.helpers.TooltipInfo;
 import com.evacipated.cardcrawl.mod.stslib.cards.interfaces.StartupCard;
+import com.evacipated.cardcrawl.mod.stslib.fields.cards.AbstractCard.PurgeField;
 import com.megacrit.cardcrawl.actions.watcher.PressEndTurnButtonAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
@@ -31,7 +32,7 @@ public class DarkFountain extends AbstractEasyCard {
         this.baseMagicNumber = 2;
         this.baseSecondMagic = 1;
         this.tags.add(RKMod.TITAN);
-        this.purgeOnUse = true;
+        PurgeField.purge.set(this, true);
         this.tags.add(RKMod.STANCE);
     }
 

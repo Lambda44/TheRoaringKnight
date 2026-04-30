@@ -19,7 +19,7 @@ public class MysteriousVoice extends AbstractEasyCard {
     public MysteriousVoice() {
         super(ID, 1, CardType.ATTACK, CardRarity.UNCOMMON, CardTarget.ENEMY);
         baseDamage = 3;
-        this.purgeOnUse = true;
+        PurgeField.purge.set(this, true);
         this.tags.add(RKMod.POINT);
     }
 

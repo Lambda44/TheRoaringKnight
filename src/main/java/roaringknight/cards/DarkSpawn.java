@@ -1,5 +1,6 @@
 package roaringknight.cards;
 
+import com.evacipated.cardcrawl.mod.stslib.fields.cards.AbstractCard.PurgeField;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
@@ -18,7 +19,7 @@ public class DarkSpawn extends AbstractEasyCard {
         baseBlock = 5;
         this.baseMagicNumber = 14;
         this.cardsToPreview = new TitanSpawn();
-        this.purgeOnUse = true;
+        PurgeField.purge.set(this, true);
         this.tags.add(RKMod.LAIDBACK);
     }
 

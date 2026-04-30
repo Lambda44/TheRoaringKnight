@@ -4,7 +4,7 @@
     <groupId>UnimportantInfo</groupId>
 
     <artifactId>TheRoaringKnight</artifactId>
-    <version>1.0.1</version>
+    <version>1.0.2</version>
     <name>The Roaring Knight</name>
     <description>Adds The Roaring Knight from Deltarune as a playable character.</description>
     <!-- Change the above for mod information. -->

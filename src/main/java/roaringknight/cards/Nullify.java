@@ -1,6 +1,7 @@
 package roaringknight.cards;
 
 import com.badlogic.gdx.graphics.Color;
+import com.evacipated.cardcrawl.mod.stslib.fields.cards.AbstractCard.PurgeField;
 import com.megacrit.cardcrawl.actions.AbstractGameAction;
 import com.megacrit.cardcrawl.actions.common.HealAction;
 import com.megacrit.cardcrawl.actions.common.RemoveSpecificPowerAction;
@@ -25,7 +26,7 @@ public class Nullify extends AbstractEasyCard {
         baseDamage = 14;
         this.baseMagicNumber = 8;
         this.baseSecondMagic = 16;
-        this.purgeOnUse = true;
+        PurgeField.purge.set(this, true);
         this.tags.add(RKMod.WINDUP);
     }
 

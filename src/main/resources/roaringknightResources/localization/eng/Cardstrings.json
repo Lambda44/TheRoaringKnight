@@ -16,6 +16,11 @@
     "DESCRIPTION": "Retain. NL If the enemy doesn't have ${ModID}:Swoon, apply ${ModID}:Swoon. NL Deal !D! damage. NL Exhaust.",
     "UPGRADE_DESCRIPTION": "Retain. NL Apply ${ModID}:Swoon. NL Deal !D! damage. NL Exhaust."
   },
+  "${ModID}:PureDarkness": {
+    "NAME": "Pure Darkness",
+    "DESCRIPTION": "Ethereal. NL Gain !M! Intangible. NL ${ModID}:Purge.",
+    "UPGRADE_DESCRIPTION": "Gain !M! Intangible. NL ${ModID}:Purge."
+  },
   "${ModID}:CrystalStorm": {
     "NAME": "Crystal Storm",
     "DESCRIPTION": "Add !M! *Stars into your hand."
@@ -101,7 +106,8 @@
   },
   "${ModID}:Swarm": {
     "NAME": "Swarm",
-    "DESCRIPTION": "Ethereal. NL ${ModID}:Titan cards cost !M! less this combat."
+    "DESCRIPTION": "Ethereal. NL ${ModID}:Titan cards cost !M! less this combat.",
+    "UPGRADE_DESCRIPTION": "${ModID}:Titan cards cost !M! less this combat."
   },
   "${ModID}:TitanSweep": {
     "NAME": "Titan Sweep",
@@ -244,7 +250,7 @@
   },
   "${ModID}:Suffocate": {
     "NAME": "Suffocate",
-    "DESCRIPTION": "Add a *Dark *Bullet and !M! *Stars into your hand. NL Upgrade ALL Colorless cards in your hand."
+    "DESCRIPTION": "Add a *Dark *Bullet and !M! *Stars into your hand. NL Upgrade !${ModID}:m2! random Colorless cards in your hand."
   },
   "${ModID}:Migrainer": {
     "NAME": "Migrainer",

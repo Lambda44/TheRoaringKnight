@@ -1,0 +1,17 @@
+{
+  "${ModID}:CouncilOfGhosts": {
+    "NAME": "Council of Ghosts",
+    "DESCRIPTIONS": [
+      "As you continue your ascent, #p~thick~ #p~black~ #p~smoke~ begins to billow out of the ground and walls around you, coalescing into three masked forms that start to speak. NL  NL \"Oh, you're not like the others, ~are~ ~you?\"~ NL  NL \"Would you like a taste of something... #ydarker #ythan #ydark?\"",
+      "#y\"Excellent!\" NL As the ghostly shape speaks, you notice its large mouth opening wider and wider. #p~Thick~ #p~black~ #p~smoke~ spews forth and envelops the room. You cannot see or breathe... NL  NL But instantly, it all fades away. Something about you feels #pdarker.",
+      "\"How disappointing...\" NL ~\"Have~ ~it~ ~your~ ~way,~ ~then.\"~ NL #r@\"HA@ #r@HA@ #r@HA@ #r@HAHAHA!\"@ NL  NL The ghosts fade away, leaving only the unnerving laughter ringing in your ears."
+    ],
+    "OPTIONS": [
+      "[Accept] #gReceive #g",
+      " Pure Darkness. #rLose #r",
+      " #rMax #rHP.",
+      "[Refuse]",
+      "[Leave]"
+    ]
+  }
+}
