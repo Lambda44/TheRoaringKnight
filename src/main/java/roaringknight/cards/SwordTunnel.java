@@ -26,6 +26,7 @@ public class SwordTunnel extends AbstractEasyCard implements StartupCard {
         this.cardsToPreview = new DarkBullet();
         this.tags.add(RKMod.SHADOW);
         this.tags.add(RKMod.POINT);
+        isMultiDamage = true;
     }
 
     public void use(AbstractPlayer p, AbstractMonster m) {

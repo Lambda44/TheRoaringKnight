@@ -20,6 +20,7 @@ public class CrystalNova extends AbstractEasyCard {
         this.baseMagicNumber = 3;
         PurgeField.purge.set(this, true);
         this.tags.add(RKMod.POINT);
+        isMultiDamage = true;
     }
 
     public void use(AbstractPlayer p, AbstractMonster m) {

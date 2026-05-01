@@ -19,7 +19,7 @@ public class Swarm extends AbstractEasyCard {
     public final static String ID = makeID("Swarm");
 
     public Swarm() {
-        super(ID, 2, CardType.POWER, CardRarity.UNCOMMON, CardTarget.SELF);
+        super(ID, 3, CardType.POWER, CardRarity.UNCOMMON, CardTarget.SELF);
         this.baseMagicNumber = 1;
         this.isEthereal = true;
         this.tags.add(RKMod.LAIDBACK);
@@ -42,6 +42,6 @@ public class Swarm extends AbstractEasyCard {
 
     @Override
     public void upp() {
-        isEthereal = false;
+        upgradeBaseCost(2);
     }
 }

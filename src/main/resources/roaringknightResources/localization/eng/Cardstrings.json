@@ -106,8 +106,7 @@
   },
   "${ModID}:Swarm": {
     "NAME": "Swarm",
-    "DESCRIPTION": "Ethereal. NL ${ModID}:Titan cards cost !M! less this combat.",
-    "UPGRADE_DESCRIPTION": "${ModID}:Titan cards cost !M! less this combat."
+    "DESCRIPTION": "Ethereal. NL ${ModID}:Titan cards cost !M! less this combat."
   },
   "${ModID}:TitanSweep": {
     "NAME": "Titan Sweep",

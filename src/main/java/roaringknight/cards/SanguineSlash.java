@@ -27,6 +27,7 @@ public class SanguineSlash extends AbstractEasyCard {
         this.baseMagicNumber = 4;
         PurgeField.purge.set(this, true);
         this.tags.add(RKMod.SSLASH);
+        this.tags.add(CardTags.HEALING);
     }
 
     public void use(AbstractPlayer p, AbstractMonster m) {

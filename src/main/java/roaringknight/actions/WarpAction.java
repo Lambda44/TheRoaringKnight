@@ -49,16 +49,21 @@ public class WarpAction extends AbstractGameAction {
                 this.isDone = true;
             } else {
                 ArrayList<AbstractCard> shadowcards = new ArrayList<>();
+                ArrayList<AbstractCard> ep = new ArrayList<>();
                 for(AbstractCard c : p().exhaustPile.group) {
-                    if (c.hasTag(RKMod.SHADOW)) {
-                        shadowcards.add(c);
+                    if (!c.hasTag(AbstractCard.CardTags.HEALING)) {
+                        if (c.hasTag(RKMod.SHADOW)) {
+                            shadowcards.add(c);
+                        }
+                        ep.add(c);
                     }
                 }
                 AbstractCard card;
+
                 if (prioritizeShadow && !shadowcards.isEmpty()) {
                     card = (AbstractCard) shadowcards.get(AbstractDungeon.cardRng.random(0, shadowcards.size() - 1));
                 } else {
-                    card = (AbstractCard) p().exhaustPile.group.get(AbstractDungeon.cardRng.random(0, p().exhaustPile.group.size() - 1));
+                    card = (AbstractCard) ep.get(AbstractDungeon.cardRng.random(0, ep.size() - 1));
                 }
                 card.unfadeOut();
                 p().hand.addToHand(card);

@@ -19,8 +19,8 @@ public class INVReduction extends AbstractEasyCard {
 
     public INVReduction() {
         super(ID, 1, CardType.ATTACK, CardRarity.UNCOMMON, CardTarget.ENEMY);
-        baseDamage = 5;
-        this.baseMagicNumber = 8; //darkness value
+        baseDamage = 6;
+        this.baseMagicNumber = 7; //darkness value
         this.baseSecondMagic = 3;
         this.tags.add(RKMod.POINT);
     }

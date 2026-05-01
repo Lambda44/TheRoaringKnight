@@ -11,11 +11,15 @@ import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import roaringknight.RKMod;
 import roaringknight.powers.TwistedHeartbeatPower;
 
+import java.util.ArrayList;
+import java.util.Iterator;
+
 import static roaringknight.util.Wiz.*;
 
 public class SelectWarpAction extends AbstractGameAction {
     private int reduceCost;
     private AbstractPlayer p;
+    private ArrayList<AbstractCard> heals = new ArrayList();
 
     public SelectWarpAction(int reduce) {
         this.actionType = ActionType.CARD_MANIPULATION;
@@ -34,29 +38,47 @@ public class SelectWarpAction extends AbstractGameAction {
                 this.isDone = true;
             } else if (p().exhaustPile.size() == 1) {
                 AbstractCard c = this.p.exhaustPile.getTopCard();
-                c.unfadeOut();
-                this.p.hand.addToHand(c);
-                if (p().hasPower(TwistedHeartbeatPower.POWER_ID)) {
-                    atb(new GainBlockAction(p(), p(), p().getPower(TwistedHeartbeatPower.POWER_ID).amount));
-                }
-                if (AbstractDungeon.player.hasPower("Corruption") && c.type == AbstractCard.CardType.SKILL) {
-                    c.setCostForTurn(-9);
-                } else if (reduceCost != 0) {
-                    c.setCostForTurn(c.makeStatEquivalentCopy().cost - reduceCost);
-                }
-                this.p.exhaustPile.removeCard(c);
+                if (c.hasTag(AbstractCard.CardTags.HEALING)) {
+                    this.isDone = true;
+                } else {
+                    c.unfadeOut();
+                    this.p.hand.addToHand(c);
+                    if (p().hasPower(TwistedHeartbeatPower.POWER_ID)) {
+                        atb(new GainBlockAction(p(), p(), p().getPower(TwistedHeartbeatPower.POWER_ID).amount));
+                    }
+                    if (AbstractDungeon.player.hasPower("Corruption") && c.type == AbstractCard.CardType.SKILL) {
+                        c.setCostForTurn(-9);
+                    } else if (reduceCost != 0) {
+                        c.setCostForTurn(c.makeStatEquivalentCopy().cost - reduceCost);
+                    }
+                    this.p.exhaustPile.removeCard(c);
 
-                c.unhover();
-                c.fadingOut = false;
-                this.isDone = true;
+                    c.unhover();
+                    c.fadingOut = false;
+                    this.isDone = true;
+                }
             } else {
                 for(AbstractCard c : this.p.exhaustPile.group) {
                     c.stopGlowing();
                     c.unhover();
                     c.unfadeOut();
                 }
-                AbstractDungeon.gridSelectScreen.open(this.p.exhaustPile, 1, "Select a Card to Return to Your Hand", false);
-                this.tickDuration();
+                Iterator<AbstractCard> c = this.p.exhaustPile.group.iterator();
+                while(c.hasNext()) {
+                    AbstractCard derp = (AbstractCard)c.next();
+                    if (derp.hasTag(AbstractCard.CardTags.HEALING)) {
+                        c.remove();
+                        this.heals.add(derp);
+                    }
+                }
+                if (this.p.exhaustPile.isEmpty()) {
+                    this.p.exhaustPile.group.addAll(this.heals);
+                    this.heals.clear();
+                    this.isDone = true;
+                } else {
+                    AbstractDungeon.gridSelectScreen.open(this.p.exhaustPile, 1, "Select a Card to Return to Your Hand", false);
+                    this.tickDuration();
+                }
             }
         } else {
             if (!AbstractDungeon.gridSelectScreen.selectedCards.isEmpty()) {
@@ -77,6 +99,8 @@ public class SelectWarpAction extends AbstractGameAction {
 
                 AbstractDungeon.gridSelectScreen.selectedCards.clear();
                 this.p.hand.refreshHandLayout();
+                this.p.exhaustPile.group.addAll(this.heals);
+                this.heals.clear();
 
                 for(AbstractCard c : this.p.exhaustPile.group) {
                     c.unhover();

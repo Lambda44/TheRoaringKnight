@@ -23,7 +23,7 @@ public class KnifeDance extends AbstractEasyCard {
     public KnifeDance() {
         super(ID, 1, CardType.ATTACK, CardRarity.UNCOMMON, CardTarget.ENEMY);
         baseDamage = 8;
-        this.baseMagicNumber = 4;
+        this.baseMagicNumber = 3;
     }
 
     public void use(AbstractPlayer p, AbstractMonster m) {
