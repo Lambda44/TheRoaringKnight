@@ -59,6 +59,10 @@ public class WarpAction extends AbstractGameAction {
                     }
                 }
                 AbstractCard card;
+                if (ep.isEmpty()) { //should catch edge cases; (ex. if Bandage Up is only card in Exhaust Pile)
+                    this.isDone = true;
+                    return;
+                }
 
                 if (prioritizeShadow && !shadowcards.isEmpty()) {
                     card = (AbstractCard) shadowcards.get(AbstractDungeon.cardRng.random(0, shadowcards.size() - 1));
