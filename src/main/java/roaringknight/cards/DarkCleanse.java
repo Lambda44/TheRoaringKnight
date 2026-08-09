@@ -17,6 +17,7 @@ public class DarkCleanse extends AbstractEasyCard {
     public DarkCleanse() {
         super(ID, 1, CardType.SKILL, CardRarity.UNCOMMON, CardTarget.SELF);
         this.tags.add(RKMod.LAIDBACK);
+        this.exhaust = true;
     }
 
     public void use(AbstractPlayer p, AbstractMonster m) {
@@ -33,6 +34,6 @@ public class DarkCleanse extends AbstractEasyCard {
 
     @Override
     public void upp() {
-        upgradeBaseCost(0);
+        this.exhaust = false;
     }
 }
